@@ -1,6 +1,5 @@
-#!/usr/bin/groovy
-
 pipeline {
+    
     agent any
     
     environment {
@@ -33,5 +32,15 @@ pipeline {
                 }
             }
         }
-    } 
-}  
+        stage('SonarQube Analytics') {
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.0.2131:sonar'
+                }
+            }
+        }
+        
+        
+        
+    }
+}
