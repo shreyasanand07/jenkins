@@ -8,12 +8,12 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "10.22.21.138:8081"
+        NEXUS_URL = "localhost:8081"
         // Repository where we will upload the artifact
-        NEXUS_REPOSITORY_RELEASES = "maven-releases"
-        NEXUS_REPOSITORY_SNAPSHOTS = "maven-snapshots"
+        NEXUS_REPOSITORY_RELEASES = "Pipeline_Project_Yorbit201_Jenkins_Repo"
+        NEXUS_REPOSITORY_SNAPSHOTS = "Pipeline_Project_Yorbit201_Jenkins_Repo"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "899bfb86-db46-3333-939e-464185476a57"
+        NEXUS_CREDENTIAL_ID = "NexusCred"
     }
     
     stages {
