@@ -13,7 +13,7 @@ pipeline {
         NEXUS_REPOSITORY_RELEASES = "Pipeline_Project_Yorbit201_Jenkins_Repo"
         NEXUS_REPOSITORY_SNAPSHOTS = "Pipeline_Project_Yorbit201_Jenkins_Repo"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "NexusCred"
+        NEXUS_CREDENTIAL_ID = "Nexus-Cred"
     }
     
     stages {
