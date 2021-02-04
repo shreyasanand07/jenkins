@@ -10,8 +10,8 @@ pipeline {
         // Where your Nexus is running
         NEXUS_URL = "localhost:8081"
         // Repository where we will upload the artifact
-        NEXUS_REPOSITORY_RELEASES = "Pipeline_Project_Yorbit201_Jenkins_Repo"
-        NEXUS_REPOSITORY_SNAPSHOTS = "Pipeline_Project_Yorbit201_Jenkins_Repo"
+        NEXUS_REPOSITORY_RELEASES = "Pipeline-Project-Yorbit201-Jenkins-Repo"
+        NEXUS_REPOSITORY_SNAPSHOTS = "Pipeline-Project-Yorbit201-Jenkins-Repo"
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "Nexus-Cred"
     }
