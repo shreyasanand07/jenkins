@@ -32,11 +32,16 @@ pipeline {
                 }
             }
         }
-        stage('SonarQube Analytics') {
+        stage('SonarQube Analysis Step') {
             steps {
                 withSonarQubeEnv('SonarQube') {
                     bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.0.2131:sonar'
                 }
+            }
+        }
+        stage('Quality Gate'){
+            steps{
+                waitForQualityGate abortPipeline: true
             }
         }
         
