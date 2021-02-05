@@ -39,11 +39,7 @@ pipeline {
                 }
             }
         }
-        stage('Quality Gate'){
-            steps{
-                waitForQualityGate abortPipeline: true
-            }
-        }
+        
         
         stage('Nexus Repository') {
             steps {
